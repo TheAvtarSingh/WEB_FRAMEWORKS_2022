@@ -1,0 +1,49 @@
+<p>todolist works!</p>
+<h1>This is heading component</h1>
+<!-- Getting data from Component.ts -->
+<!-- using ngfor loop -->
+
+
+
+<h1>String Interpolation</h1>
+
+Structural Directives ; 
+<div class="container">
+    <button (click)="onCreate()">
+        Create Block
+    </button><br><br>
+    <div ></div>
+</div>
+
+
+<div *ngIf="show then thenBlock else elseBlock"></div>
+<ng-template #thenBlock> Created true.</ng-template>
+<ng-template #elseBlock>Creation Failed</ng-template>
+
+
+<ul *ngFor="let todo of todos">
+    <li>{{todo.sno}}-{{todo.title}}-{{todo.desc}}-{{todo.active}}</li>
+</ul>
+
+ng Switch
+
+<ul [ngSwitch]="Items">
+    <li *ngSwitchCase="'laptop'">laptop</li>
+    <li *ngSwitchCase="'Bag'">Bag</li>
+    <li *ngSwitchCase="'Mobile Phone'">Mobile Phone</li>
+    <li *ngSwitchCase="'Dryers'">Dryers</li>
+    <li *ngSwitchCase="'New Arrivals'">New Arrivals</li>
+    <li *ngSwitchDefault>Not Available</li>
+  </ul>
+
+
+
+
+
+<h1>Property Binding</h1>
+<img [src]="imgUrl"/>
+
+<h1>Event Binding </h1>
+<button (click)="onSave()">Save Me</button>
+
+

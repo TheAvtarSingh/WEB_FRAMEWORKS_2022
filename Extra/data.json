@@ -1,0 +1,44 @@
+[
+    {
+        "name" : "Aman",
+        "age" : 30,
+        "occupation" : "Employee",
+        "address" : "Delhi",
+        "gender" : "Male"
+    },
+    {
+        "name" : "Pooja",
+        "age" : 31,
+        
+        "address" : "Noida",
+        "gender" : "Female"
+    },
+
+
+    {
+        "name" : "Avtar",
+        "gender" : "Male",
+        "age":22,
+        "address" : {
+            "house_no" : "361",
+            "city" : "Faridabad",
+            "state" : "Haryana",
+            "country" : "India"
+        },
+        "hobbies" : "cricket"
+    },
+    {
+        "name" : "Shivam",
+        "gender" : "Male",
+        "age":22,
+        "address" : {
+            "house_no" : "A-722",
+            "apartment" : "ABC",
+            "city" : "Shadra",
+            "state" : "Delhi",
+            "country" : "India"
+        },
+        "hobbies" : ["football","tennis","cricket"]
+    }
+
+]

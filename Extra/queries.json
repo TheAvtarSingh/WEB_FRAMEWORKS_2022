@@ -1,0 +1,184 @@
+
+ db.customers.find({},{name:1,hobbies:1,_id:0}).pretty();
+{ }
+{ "name" : "Ram" }
+{ "name" : "Shyam" }
+{ "name" : "Aman" }
+{ "name" : "Avtar", "hobbies" : "cricket" }
+{ "name" : "Shivam", "hobbies" : [ "football", "tennis", "cricket" ] }
+> db.customers.update({"name":"Aman"},{$set :{hobbies : ["basketball","cricket"]
+}});
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.customers.update({"name":"Ram"},{$set :{hobbies : ["music","cricket"]}});
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.customers.find({},{name:1,hobbies:1,_id:0}).pretty();
+{ }
+{ "name" : "Ram", "hobbies" : [ "music", "cricket" ] }
+{ "name" : "Shyam" }
+{ "name" : "Aman", "hobbies" : [ "basketball", "cricket" ] }
+{ "name" : "Avtar", "hobbies" : "cricket" }
+{ "name" : "Shivam", "hobbies" : [ "football", "tennis", "cricket" ] }
+> db.customers.find({"name":"Ram"}).pretty();
+{
+        "_id" : ObjectId("62ecba52f47a5b57f2dc19be"),
+        "name" : "Ram",
+        "age" : 34,
+        "email" : "ram12@gmail.com",
+        "hobbies" : [
+                "music",
+                "cricket"
+        ]
+}
+> db.customers.findOne({"name":"Shivam"}).pretty();
+2022-08-05T13:48:29.270+0530 E  QUERY    [js] uncaught exception: TypeError: db.
+customers.findOne(...).pretty is not a function :
+@(shell):1:1
+> db.customers.findOne({"name":"Shivam"});
+{
+        "_id" : ObjectId("62ecc2f4f47a5b57f2dc19c3"),
+        "name" : "Shivam",
+        "gender" : "Male",
+        "age" : 22,
+        "address" : {
+                "house_no" : "A-722",
+                "apartment" : "ABC",
+                "city" : "Shadra",
+                "state" : "Delhi",
+                "country" : "India"
+        },
+        "hobbies" : [
+                "football",
+                "tennis",
+                "cricket"
+        ]
+}
+> db.customers.findOne({"name":"Shivam"}).hobbies;
+[ "football", "tennis", "cricket" ]
+> db.customers.findOne({"name":"Shivam"}).hobbies[0];
+football
+> db.customers.find({"address.country" : "India"}).pretty();
+{
+        "_id" : ObjectId("62ecc2f4f47a5b57f2dc19c2"),
+        "name" : "Avtar",
+        "gender" : "Male",
+        "age" : 22,
+        "address" : {
+                "house_no" : "361",
+                "city" : "Faridabad",
+                "state" : "Haryana",
+                "country" : "India"
+        },
+        "hobbies" : "cricket"
+}
+{
+        "_id" : ObjectId("62ecc2f4f47a5b57f2dc19c3"),
+        "name" : "Shivam",
+        "gender" : "Male",
+        "age" : 22,
+        "address" : {
+                "house_no" : "A-722",
+                "apartment" : "ABC",
+                "city" : "Shadra",
+                "state" : "Delhi",
+                "country" : "India"
+        },
+        "hobbies" : [
+                "football",
+                "tennis",
+                "cricket"
+        ]
+}
+> db.customers.find({"gender" : {$eq : "Male"}}).pretty();
+{
+        "_id" : ObjectId("62ecbd9af47a5b57f2dc19c0"),
+        "name" : "Aman",
+        "age" : 30,
+        "occupation" : "Employee",
+        "address" : "Delhi",
+        "gender" : "Male",
+        "hobbies" : [
+                "basketball",
+                "cricket"
+        ]
+}
+{
+        "_id" : ObjectId("62ecc2f4f47a5b57f2dc19c2"),
+        "name" : "Avtar",
+        "gender" : "Male",
+        "age" : 22,
+        "address" : {
+                "house_no" : "361",
+                "city" : "Faridabad",
+                "state" : "Haryana",
+                "country" : "India"
+        },
+        "hobbies" : "cricket"
+}
+{
+        "_id" : ObjectId("62ecc2f4f47a5b57f2dc19c3"),
+        "name" : "Shivam",
+        "gender" : "Male",
+        "age" : 22,
+        "address" : {
+                "house_no" : "A-722",
+                "apartment" : "ABC",
+                "city" : "Shadra",
+                "state" : "Delhi",
+                "country" : "India"
+        },
+        "hobbies" : [
+                "football",
+                "tennis",
+                "cricket"
+        ]
+}
+> db.customers.find({"gender" : {$neq : "Male"}}).pretty();
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "unknown operator: $neq",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.customers.find({"age" : {$gt : 30}}).pretty();
+{
+        "_id" : ObjectId("62ecba52f47a5b57f2dc19be"),
+        "name" : "Ram",
+        "age" : 34,
+        "email" : "ram12@gmail.com",
+        "hobbies" : [
+                "music",
+                "cricket"
+        ]
+}
+> db.customers.find({"age" : {$nte : 30}}).pretty();
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "unknown operator: $nte",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.customers.find({"gender" : {$ne : "Male"}}).pretty();
+{
+        "_id" : ObjectId("62ecba3ef47a5b57f2dc19bd"),
+        "item" : "card",
+        "qty" : 15
+}
+{
+        "_id" : ObjectId("62ecba52f47a5b57f2dc19be"),
+        "name" : "Ram",
+        "age" : 34,
+        "email" : "ram12@gmail.com",
+        "hobbies" : [
+                "music",
+                "cricket"
+        ]
+}
+{
+        "_id" : ObjectId("62ecba99f47a5b57f2dc19bf"),
+        "name" : "Shyam",
+        "age" : 24,
+        "email" : "shyam122@gmail.com",
+        "gender" : "M",
+        "address" : "Delhi"
+}
+>

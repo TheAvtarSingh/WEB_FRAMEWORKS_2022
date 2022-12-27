@@ -1,0 +1,9 @@
+img{
+    width: 396px;
+    height: 577px;
+   border-radius: 22px;
+   border: 2px solid black;
+    /* transform: rotateX(1turn); */
+    transform: translate(120px, 50%);
+    transform: scale(0.5) translate(-100%, -100%);
+}

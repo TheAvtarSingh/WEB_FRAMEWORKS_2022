@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1{
+    text-align: center;
+    line-height: 1.7;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 32px;
+    background-color:#2874f0;
+    border: 2px solid white;
+    color: white;
+
+}
+
+nav img{
+    height: 68px;
+width: 246px;
+
+}
+nav{
+    background-color: #4886ec5c;
+    width: 269px;
+margin-left: 3px;
+border-radius: 11px;
+display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+display: flex;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li{
+    text-decoration: none;
+    
+}

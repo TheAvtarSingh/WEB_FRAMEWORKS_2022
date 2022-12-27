@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+   <div class="item"> <h1>Form Practical</h1></div>
+    <br>
+    <div class="item">
+    <form action="Boi" method="get">
+        <fieldset>
+            <legend>Registration Form : </legend>
+            <label>Enter name ( <span>*</span>) :   
+            <input type="text" name="name" class="section">
+            </label>
+            <h4 class="errorMessage"></h4>
+            <label>Enter Password ( <span>*</span>) : 
+            <input type="password" name="pass"  class="section">
+            </label>
+            <h4 class="errorMessage"></h4>
+            <label>Enter Email ( <span>*</span>) : 
+            <input type="email" name="email"  class="section">
+            </label>
+            <h4 class="errorMessage"></h4>
+            <label>Enter Age ( <span>*</span>) : 
+            <input type="number" name="" min="10" max="120"  class="section">
+            </label>
+            <h4 class="errorMessage"></h4>
+            <label>Enter Phone Number : (without +91)  ( <span>*</span>)
+            <input type="number" required pattern="[0-9]{10}"  class="section">
+            </label>
+            <h4 class="errorMessage"></h4>
+            <label>Country  ( <span>*</span>)
+            <input type="text" name="country"  class="section">
+            </label>
+            <h4 class="errorMessage"></h4>
+            <label>Choose Colour : 
+            <input type="color" name="color"  class="section">
+            </label>
+            <h4 class="errorMessage"></h4>
+            <label>Enter DOB ( <span>*</span>) : 
+            <input type="date" name="date"  class="section">
+            </label>
+            <h4 class="errorMessage"></h4>
+            <label >Enter time : 
+            <input type="time" name="datetime"  class="section">
+            </label>
+            <h4 class="errorMessage"></h4>
+            <label >Enter range : 
+            <input type="range" name="range" min="100" max="2000"  class="section">
+            </label>
+            <h4 class="errorMessage"></h4>
+            <label for="message">Enter Your Message : 
+            <textarea name="text"  cols="30" rows="10"  class="section"></textarea>
+            </label>
+            <h4 class="errorMessage"></h4>
+            <!-- <label>Presentation Video :  -->
+            <!-- <iframe class="section" width="560" height="315" src="https://www.youtube.com/watch?v=CdyYxyGDbw8&ab_channel=ModernClasses" title="Youtube video player" frameborder="0"></iframe> -->
+        </label>
+            <input type="button" class="" value="Reset">
+            <button type="submit" id="submit">Submit</button>
+        </fieldset>
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>

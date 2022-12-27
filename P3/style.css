@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.mainlogo {
+    margin-top: 6px;
+    width: 207px;
+    height: 120px;
+    margin-left: 19px;
+    border-radius: 20px;
+    border: 2px dotted brown;
+    position: absolute;
+    top: 9px;
+}
+
+nav {
+    display: inline-block;
+}
+
+.starting_nav .red_word {
+    color: red;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 150px;
+}
+
+.title_text a:link {
+    text-decoration: none;
+}
+
+.starting_nav {
+    background-color: bisque;
+    height: 150px;
+    border: 2px solid sandybrown;
+    width: 100%;
+}
+
+span {
+    font-size: 25px;
+    line-height: 150px;
+    color: black;
+
+}
+
+ul {
+    display: flex;
+
+}
+
+.nav_locator ul li a:link {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 9px;
+margin-right: 13px;
+    line-height: 50px;
+
+}
+
+.long_divider {
+    font-size: 25px;
+    line-height: 50px;
+    color: black;
+}
+
+#nav_bar_form {
+    margin-left: 20px;
+    margin-top: 15px;
+    display: inline-block;
+
+}
+
+#nav_bar_form input {
+
+   
+        width: 600px;
+        height: 50px;
+        border-radius: 15px;
+        text-align: center;
+        border: 3px dotted black;
+        margin-right: 403px;
+        position: absolute;
+        top: 1px;
+        left: 445px;
+        margin-top: 72px;
+     
+}
+
+#nav_bar_form button {
+
+    width: 120px;
+    height: 55px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: yellowgreen;
+    border: 3px dotted black;
+
+position: absolute;
+left: 1093px;
+top: 74px;
+}
+.buynow_button {
+
+    width: 120px;
+    height: 55px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: yellowgreen;
+    border: 3px dotted black;
+
+
+}
+.buynow_button_main {
+
+    width: 783px;
+    height: 61px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: yellowgreen;
+    border: 3px solid rgb(255, 255, 255);
+
+
+}
+
+#cart_button {
+
+    margin-left: 1201px;
+width: 120px;
+height: 55px;
+border-radius: 30px;
+text-align: center;
+line-height: 10px;
+position: absolute;
+top: 74px;
+background-color: gold;
+border: 3px dotted black;
+}
+
+#cart_button img {
+
+    width: 40px;
+    height: 40px;
+}
+
+header {
+    /* position: sticky;
+    top: 0; */
+}
+
+main {
+    background-image: url(https://get.wallhere.com/photo/colorful-abstract-sky-purple-lightning-blue-simple-gradient-circle-atmosphere-pink-Easter-magenta-color-shape-line-petal-computer-wallpaper-160769.jpg);
+    width: 98.9vw;
+    height: 100%;
+}
+
+.nav_categories {
+    display: inline flow-root list-item;
+}
+
+.navbarlist {
+    margin-left: 43px;
+    margin-right: 50px;
+
+}
+
+.navbarlist a:link {
+
+    text-decoration: none;
+}
+
+#main_header {
+    padding-top: 34px;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    padding-bottom: 34px;
+}
+
+.left_sidebar {
+
+    border: 1px solid rgb(255, 255, 255);
+    width: 29%;
+    box-shadow: 2px -2px 7px white;
+    height: 100%;
+}
+
+.center_sidebar {
+
+    border: 1px solid rgb(255, 255, 255);
+    width: 66%;
+    height: 100%;
+    box-shadow: 2px -2px 7px white;
+}
+
+.container {
+    display: flex;
+    width: 100em;
+    height: 100em;
+}
+
+.left_box_heading {
+    padding-top: 23px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-bottom: 29px;
+}
+
+.left_box_heading_low {
+
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+#name {
+    width: 285px;
+    height: 43px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px dotted black;
+    margin-left: 13px;
+}
+
+#name_scroll {
+    width: 285px;
+    height: 43px;
+
+    margin-left: 13px;
+}
+
+.search_me {
+    margin-left: 6px;
+    margin-top: 2px;
+    width: 138px;
+    height: 47px;
+    border-radius: 9px;
+    text-align: center;
+    line-height: 10px;
+    background-color: #f4a9a9;
+    border: 1px dotted white;
+}
+
+#price_range {
+    padding-top: 23px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-bottom: 29px;
+}
+
+.discount_grid {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.star {
+    display: inline-block;
+    width: 317px;
+    height: 191px;
+    object-fit: contain;
+    position: absolute;
+    left: 110px;
+
+}
+
+.start_heading{
+    margin-left: 68px;
+    color: white;
+}
+
+.center_sidebar_min_heading{
+    padding-top: 23px;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    padding-bottom: 29px;
+    display: inline-block;
+    padding-left: 61px;
+}
+.center_sidebar_main_min_heading{
+    padding-top: 36px;
+    font-size: 69px;
+    text-align: center;
+    color: white;
+   
+    display: inline-block;
+    padding-left: 145px;
+}
+.center_sidebar_min_heading:hover{
+    padding-top: 23px;
+font-size: 20px;
+    text-align: center;
+    color: rgb(14, 255, 215);
+    padding-bottom: 29px;
+    display: inline-block;
+    padding-left: 61px;
+}
+ 
+.product_image{
+    height: 15em;
+    width: 11em;
+    margin-left: 46px;
+    border-radius: 27px;
+}
+.product_image_big{
+    height: 26em;
+    width: 47em;
+    margin-left: 46px;
+    border: 1px solid white;
+    margin-top: 23px;
+}
+
+.white_color{
+    color: white;
+}
+.inner_bars{
+    border: 1px solid rgb(255, 255, 255);
+width: 24%;
+height: 36%;
+box-shadow: -1px -2px 7px rgb(255, 255, 255);
+margin: 19px;
+
+}
+.inner_bars:hover{
+    border: 1px solid rgb(255, 255, 255);
+width: 25%;
+height: 37%;
+box-shadow: 5px -2px 7px rgb(96, 9, 179);
+}
+
+.main_bar{
+    border: 1px solid rgb(255, 255, 255);
+    width: 78%;
+    height: 58%;
+    box-shadow: -1px -2px 7px rgb(255, 255, 255);
+    margin: 0px;
+
+}
+.bar_position{
+    position: relative;
+  top: -1170px;
+  left: 21px;
+}
+
+
+
+.new{
+    font-size: 16px;
+    line-height: 0px;
+   
+    color: rgb(255, 0, 0);
+}
+
+.bar_position_top{
+    position:inherit;
+
+
+}
+.bar_position_top1{
+    position: static;
+    top: 100px;
+}
+
+.text_center > .white{
+    color: white;
+}
+.white{
+    color: white;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.line{
+text-decoration: line-through;
+}
+footer{
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    background-color:rgb(153, 73, 207)
+}

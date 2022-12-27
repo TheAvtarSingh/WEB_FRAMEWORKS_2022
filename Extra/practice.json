@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Harit",
+        "roll_no" : "20csu241",
+        "section" : "FSB",
+        "gender":"Male",
+        "address" : {
+            "house_no":"688",
+            "apartment":"Aujla Apartments",
+            "city":"Rohini",
+            "state":"Delhi",
+            "country":"India"
+        }
+
+    },
+    {
+        "name": "Anshit",
+        "roll_no" : "20csu188",
+        "section" : "FSB",
+        "gender":"Male",
+        "hobbies":["Cricket","Music"]
+    }
+
+]

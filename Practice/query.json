@@ -1,0 +1,64 @@
+db.createCollection("validation_product",
+{
+    validator: {
+        $jsonSchema :{
+            bsonType : "object",
+            title: "Product Validations",
+            required : ["title","desc","ratings","colour","reviews"],
+            properties : {
+                title : {
+                    bsonType : "string"
+                    ,
+                    description : "'title' must be a string",
+                },
+                desc : {
+                    bsonType : 
+                        ["string"],
+                    description : "'desc' must be a string"
+                },
+                ratings : {
+                    bsonType : 
+                        "int"
+                    ,
+                    minimum : 1,
+                    maximum : 5,
+                    description : "'ratings' must be in 1-5 range"
+                },
+                color : {
+                    bsonType : [
+                        "array"
+                    ],
+                    description : "'color' must be a string",
+                    properties : {
+                        colours : {
+                            bsonType : [
+                                "string"
+                            ],
+                            description : "'color' must be a string"
+                        }
+                    }
+                },
+                reviews : {
+                    bsonType : [
+                        "array"
+                    ],
+                    description : "reviews array",
+                    properties : {
+                        username : {
+                                  bsonType : 
+                                "string"
+                            ,
+                             description : "username must be string",
+                        },
+                        review : {
+                            bsonType : 
+                                "string"
+                            ,
+                            description : "review must be a string",
+                        }
+                    }
+                }
+            }
+        }
+    }
+});

@@ -1,0 +1,15 @@
+body {
+  color: white;
+  background-color: #1d2630;
+  animation: changeBg 15s ease-in-out infinite;
+
+  }
+@keyframes changeBg {
+    0% {background-color: #1d2630;}
+    25% {background-color: rgb(53, 31, 33);}
+    50% {background-color: #301d2b;}
+    75% {background-color: #301d1d;}
+  
+    90% {background-color: #25301d;}
+    100% {background-color: #1d2630;}
+  }

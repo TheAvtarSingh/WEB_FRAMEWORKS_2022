@@ -1,0 +1,20 @@
+form fieldset label{
+    margin-top: 20px;
+    display : flex;
+}
+
+.section{
+    margin-left: 50px;
+}
+
+span{
+    color: red;
+
+}
+
+body{
+    display: flex;
+}
+div{
+    flex-direction: row;
+}

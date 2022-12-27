@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Checker</title>
+</head>
+<script>
+
+
+function checkAge(){
+    let userInput = document.getElementById('age').value;
+console.log(userInput);
+if(userInput==null || userInput==""){
+   document.getElementById('message').innerText = "Enter Your Age Please";
+   return false;
+}
+
+    else if(userInput>=18){
+        document.getElementById('result').innerText = "You can Drive a Car";
+    }else{
+        document.getElementById('result').innerText = "You are Under Age ";
+    }
+}
+</script>
+<body>
+    <h1 style="color : green">Enter Your Age : </h1>
+    <input type="number" name="age" id="age" placeholder="Age : ">
+    <h2 style="color:red;" id="message"></h2>
+    <button type="submit" id="submit" onclick="checkAge()">Submit</button>
+    <h1 id="result"></h1>
+</body>
+</html>

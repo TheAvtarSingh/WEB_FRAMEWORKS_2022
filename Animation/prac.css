@@ -1,0 +1,43 @@
+#complete {
+    animation: slide-bottom 20s infinite both;
+    position: absolute;
+    width: 30%;
+    bottom: 20%;
+    left: 45%;
+}
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+
+
+    100% {
+        transform: translateY(100px);
+        opacity: 0%;
+    }
+
+}
+
+#complete_eaten {
+    animation: slide-right 10s infinite both;
+    position: absolute;
+    width: 30%;
+    bottom: 20%;
+    left: 45%;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0);
+        opacity: 0%;
+    }
+
+
+    100% {
+        transform: translateX(100px);
+        opacity: 100%;
+    }
+
+}

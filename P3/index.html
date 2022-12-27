@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site - Avtar Singh 20csu241</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header style="margin-bottom: -26px;">
+        <nav class="starting_nav">
+            <span class="title_text">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+
+                    <span class="red_word">S</span><span>hopping</span><span class="red_word">C</span><span>art</span>
+                </a>
+            </span>
+            <a href="#"> <img class="mainlogo"
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7a3ec529632909.55fc107b84b8c.png"
+                    alt="logo">
+            </a>
+
+            <div class="nav_locator">
+                <ul style="position: absolute;top: 8px;left: 421px;">
+                    <li><a href="#">Home</a></li><Span class="long_divider">|</Span>
+                    <li><a href="#">Shop Locator</a></li><Span class="long_divider">|</Span>
+                    <li><a href="#">Track Order</a></li><Span class="long_divider">|</Span>
+                    <li><a href="#">+91 12334344</a></li><Span class="long_divider">|</Span>
+                    <li><a href="#">Sign in</a></li><Span class="long_divider">|</Span>
+                    <li><a href="#">Sign Up</a></li><Span class="long_divider">|</Span>
+                    <li><a href="#">Scroll Down</a></li><Span class="long_divider">|</Span>
+                    <li><a href="#">Skip To Main Content</a></li>
+                </ul>
+
+                <form id="nav_bar_form" action="fill.html" method="get">
+                    <input type="text" name="req" id="req" placeholder="How can we help you Today ?">
+                    <button type="submit">Submit</button>
+                </form>
+
+                <button id="cart_button" type="submit"><img
+                        src="https://media.istockphoto.com/id/815698766/photo/red-shopping-cart-icon.webp?s=612x612&w=is&k=20&c=KMM43v9YfY65uZgzRxz_eSiKT4gNdLTJPnOlzxutK6Q="
+                        alt=""></button>
+            </div>
+        </nav>
+    </header>
+    <div class="nav_categories">
+        <ul>
+            <li class="navbarlist"><a href="#" target="_blank" rel="noopener noreferrer">All Categories</a></li><Span
+                class="long_divider">|</Span>
+            <li class="navbarlist"><a href="#" target="_blank" rel="noopener noreferrer">Home</a></li><Span
+                class="long_divider">|</Span>
+            <li class="navbarlist"><a href="#" target="_blank" rel="noopener noreferrer">About Us</a></li><Span
+                class="long_divider">|</Span>
+            <li class="navbarlist"><a href="#" target="_blank" rel="noopener noreferrer">Kitchen</a></li><Span
+                class="long_divider">|</Span>
+            <li class="navbarlist"><a href="#" target="_blank" rel="noopener noreferrer">Household</a></li><Span
+                class="long_divider">|</Span>
+            <li class="navbarlist"><a href="#" target="_blank" rel="noopener noreferrer">FAQ</a></li><Span
+                class="long_divider">|</Span>
+            <li class="navbarlist"><a href="#" target="_blank" rel="noopener noreferrer">Pages</a></li><Span
+                class="long_divider">|</Span>
+            <li class="navbarlist"><a href="#" target="_blank" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+    </div>
+    <main>
+        <h1 id="main_header">Our Top Products</h1>
+        <div class="container">
+            <div class="left_sidebar">
+                <h3 class="left_box_heading">Search For Products : </h3>
+                <form action="#" method="get">
+                    <input type="text" name="name" placeholder="Search Here" id="name">
+                    <button class="search_me" type="submit">Submit</button>
+                </form>
+                <div class="widget">
+                    <h3 class="left_box_heading">Price Range</h3>
+                    <h3 class="left_box_heading_low">₹ 541 -
+                        ₹ 1000</h3>
+
+                    <input type="range" id="name_scroll">
+                </div>
+
+                <div class="widget">
+                    <h3 class="left_box_heading">Food Preference</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="food" id="veg">
+                            <label class="left_box_heading_low" for="veg">Vegetarian</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="food" id="non-veg">
+                            <label class="left_box_heading_low" for="non-veg">Non-Vegetarian</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="discount_grid">
+                    <h3 class="left_box_heading">Discount</h3>
+                    <ul class="discount_grid">
+                        <li>
+                            <input type="checkbox" id="discount_1">
+                            <label class="left_box_heading_low" for="discount_1">5% or more</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="discount_2">
+                            <label class="left_box_heading_low" for="discount_2">10% or
+                                more</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="discount_3">
+                            <label class="left_box_heading_low" for="discount_3">20% or
+                                more</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="discount_4">
+                            <label class="left_box_heading_low" for="discount_4">30% or
+                                more</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="discount_5">
+                            <label class="left_box_heading_low" for="discount_5">40% or
+                                more</label>
+                        </li>
+                        <li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3 class="left_box_heading">Customer Review</h3>
+                    <ul class="discount_grid" class="reviews">
+                        <li>
+                            <img class="star"
+                                src="https://cdn3.iconfinder.com/data/icons/stars-5/512/5_stars-512.png"></img><span
+                                class="start_heading">5.0</span>
+                        </li>
+                        <li>
+                            <img class="star"
+                                src="https://cdn3.iconfinder.com/data/icons/stars-5/512/4_stars-512.png"></img><span
+                                class="start_heading">4.0</span>
+                        </li>
+                        <li>
+                            <img class="star"
+                                src="https://cdn3.iconfinder.com/data/icons/stars-5/512/3_stars-512.png"></img><span
+                                class="start_heading">3.0</span>
+                        </li>
+                        <li>
+                            <img class="star"
+                                src="https://cdn3.iconfinder.com/data/icons/stars-5/512/2_stars-512.png"></img><span
+                                class="start_heading">2.0</span>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="center_sidebar">
+
+                <div class="inner_bars bar_position_top">
+
+                    <h3 class="center_sidebar_min_heading">Nuts <span class="new">new</span></h3>
+
+                    <h2 class="white">--------------------
+                    </h2>
+
+                    <img class="product_image" src="https://m.media-amazon.com/images/I/71H8N3F7scL._SL1488_.jpg"
+                        alt="nuts">
+                    <h2 class="white">--------------------
+                    </h2>
+                    <div class="text_center">
+                        <h2 class="white">Price :
+                        </h2>
+
+                        <h2 class="white line"> ₹ 140/Kg
+                        </h2>
+                        <h2 class="white"> ₹ 120/Kg
+                        </h2>
+                        <h2 class="white">--------------------
+                        </h2>
+                        <button class="buynow_button" type="submit">Buy Now</button>
+
+
+                    </div>
+                </div>
+                <div class="inner_bars  bar_position_top" style="position: relative;top: -597px;left: 286px;">
+
+                    <h3 class="center_sidebar_min_heading">Almonds
+                        <span class="new">new <br>
+
+                        </span>
+
+                    </h3>
+
+                    <h2 class="white">--------------------
+                    </h2>
+
+                    <img class="product_image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS77ZwQfidX9boKBphHnsly2LKCDVwF_P-IJSE4MQqgKtUY8iI7XR1LOXf0qMiZr6MxlDc&amp;usqp=CAU"
+                        alt="almonds">
+                    <h2 class="white">--------------------
+                    </h2>
+                    <div class="text_center">
+                        <h2 class="white">Price :
+                        </h2>
+
+                        <h2 class="white line"> ₹ 200/Kg
+                        </h2>
+                        <h2 class="white"> ₹ 180/Kg
+                        </h2>
+                        <h2 class="white">--------------------
+                        </h2>
+                        <button class="buynow_button" type="submit">Buy Now</button>
+
+
+                    </div>
+
+
+                </div>
+                <div class="inner_bars  bar_position_top" style="position: relative;top: -1193px;left: 571px;">
+
+                    <h3 class="center_sidebar_min_heading">Cashew <span class="new">new</span></h3>
+
+                    <h2 class="white">--------------------
+                    </h2>
+
+                    <img class="product_image"
+                        src="data:image/jpeg;base64,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"
+                        alt="almonds">
+                    <h2 class="white">--------------------
+                    </h2>
+                    <div class="text_center">
+                        <h2 class="white">Price :
+                        </h2>
+
+                        <h2 class="white line"> ₹ 240/Kg
+                        </h2>
+                        <h2 class="white"> ₹ 220/Kg
+                        </h2>
+                        <h2 class="white">--------------------
+                        </h2>
+                        <button class="buynow_button" type="submit">Buy Now</button>
+
+
+                    </div>
+
+                   
+
+
+                </div>
+
+
+                <div class="main_bar  bar_position" >
+
+                    <h3 class="center_sidebar_main_min_heading">Mix Dry Fruits
+                        <span class="white"> [ Package ] <br>
+
+                        </span>
+
+                    </h3>
+
+                    <h2 class="white">-----------------------------------------------------------------
+                    </h2>
+
+                    <img class="product_image_big" src="https://www.mumbailive.com/images/media/images/images_1571394441925_Sukameva.jpg?bg=ba7a45&crop=1368%2C768%2C0%2Cnull&fit=fill&fitToScale=w%2C1368%2C768&fm=webp&h=768&height=768&w=1368&width=1368" alt="complete">
+                  
+                    <div class="text_center">
+                        <h2 class="white">Price :
+                        </h2>
+
+                        <h2 class="white line"> ₹ 1200/Kg
+                        </h2>
+                        <h2 class="white"> ₹ 999/Kg
+                        </h2>
+                        <h2 class="white">--------------------
+                        </h2>
+                        <button class="buynow_button_main " type="submit">Add to Cart</button>
+
+
+                    </div>
+
+
+                </div>
+               
+            </div>
+    </main>
+<footer>
+   <h3> &copy; | Avtar Singh | singha2k2@gmail.com</h3>
+</footer>
+
+</body>
+
+</html>
